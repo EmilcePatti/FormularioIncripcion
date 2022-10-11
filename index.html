@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="img/icono.png.png">  <!--icono para la pestaña-->
+</head>
+<body>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26266.622648865214!2d-58.39304926768753!3d-34.621154899098734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac630121623%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n!5e0!3m2!1ses!2sar!4v1665516016874!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   <!-- acabamos de pegar en el body el enlace de una direccion de google maps-->  <!-- con alt y Z se pega asi, 4 renglones-->
+   <!--compartir/insertarmapa/copiar html y pegamos-->
+
+  <hr> <!-- lo podemos poner para hacer un salto de linea y que no se muestren uno al lado del otro-->
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/9X4fC1UCGss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <!-- enlace de un video de you tube-->  <!-- compartir/insertar/ copiamos el iframe y pegamos-->
+
+
+  <h1>formulario
+  </h1>
+
+
+  <form action="https://formspree.io/f/mvoyqbdn" method="post"> <!-- todo formlario empieza con la etiqueta form-->
+    <!-- entramos ala cuenta de formspree y ahi sacamos en enlace de formulario para pegarlo a ACTION para que las respuestas llegen al gmail asociado-->
+
+    <label for="nombre"> nombre: </label> <!-- label es la consigna por ejemplo nombre/apellido/direccion-->
+    <input type="text" id="nombre" placeholder=" escribi tu nombre" required> <!-- input es la cajita para escribir--> <!-- placeholder es para visualizar la consigna en la cajita-->
+    <!-- creamos un id que se llamen igual para relacionar el label con el input-->
+    <!-- required es para que si queda una cajita en blanco sin llenar te avisa-->
+    <br>
+
+    <label for="apellido">apellido</label>
+    <input type="text" id="apellido" name="apellido"> 
+    <br>
+
+    <label > selecciona curso <!-- se borro el fort que aparece en la etiqueta label-->
+        <select name=" curso elejido"> <!-- esta etiqueta es para que nos llegue la respuesta de la persona-->
+        <option value="" >elijo python</option>
+        <option value="" selected>elijo web</option>  <!-- selected es para elejir que queres que prefigure com0o opcion-->
+        <option value="">elijuo java</option>
+    </select>
+             <!-- creamos un selector. consigna y opciones de curso-->
+
+    </label>
+   <br>
+    <label > deja tu comentario
+        <textarea  name=" comentarios" id="" cols="30" rows="10"></textarea> <!-- cols y rows es cuantas columnas y filas damos para que escriban-->
+    </label>
+
+    <label > email
+        <input type="email" name="email" placeholder=" escribi tu e-mail" required> <!--al poner en TYPE email, si escribe otra cosa que no sea formato email salta un cartelito-->
+
+    </label>
+
+    <label >  password
+        <input type="password" name="password" placeholder="escribe tu contraseña" required>
+
+    </label>
+
+    <p> sexo:   <!-- formato redondito como respusta-->
+
+    <label > mujer
+       <input type="radio" name="sexo" value="M">
+
+    </label>
+
+    <label > hombre
+        <input type="radio" name="sexo" value="H"> <!-- al poner lo mismo en name, se selecciona un solo redondito como respuesta-->
+    </label>
+
+    </p>
+ 
+<fieldset> 
+    <legend> datos extras</legend>
+    <label > dni:
+    <input type="text" name="dni">
+    </label>
+</fieldset> <!-- estas etiquetas es para crear una seccion de datos extras-->
+
+<input type="reset" name=" reset">  <!-- creamos un boton para borrar todo lo que escribimos en el formulario-->
+
+<input type="submit" value="submit"> <!-- boton para enviar toda la info del formulario-->
+
+
+  </form>
+
+  
+
+</body>
+</html>
